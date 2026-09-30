@@ -2,7 +2,6 @@
 
 function router(){
     echo "2. Router está analisando a URL.<br>";
-    $rota = "/usuarios";
-    $parametro = "id=123";
+    $rota = $_GET['rota'] ?? "/usuarios";
     middleware($rota);
 }
